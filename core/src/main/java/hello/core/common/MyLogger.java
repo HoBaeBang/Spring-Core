@@ -9,7 +9,7 @@ import javax.annotation.PreDestroy;
 import java.util.UUID;
 
 @Component
-@Scope(value = "request",proxyMode = ScopedProxyMode.TARGET_CLASS)       //http요청당 하나씩 생성되고, http요청이 끝나는 시점에 소멸된다.
+@Scope(value = "request",proxyMode = ScopedProxyMode.TARGET_CLASS )       //http요청당 하나씩 생성되고, http요청이 끝나는 시점에 소멸된다.
 public class MyLogger {
 
     private String uuid;
